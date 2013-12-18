@@ -7,5 +7,9 @@ class PortfolioController < ApplicationController
     render "portfolio/brands"
   end
 
+  def services
+    render "portfolio/services"
+  end
+
 
 end

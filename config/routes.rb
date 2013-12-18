@@ -7,6 +7,7 @@ Simpleuxdesign::Application.routes.draw do
   
   get "/index" => 'portfolio#index'
   get "/brands" => 'portfolio#brands'
+  get "/services" => 'portfolio#services'
   
   
   # Example of regular route:
