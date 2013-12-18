@@ -1,7 +1,6 @@
 nav
   background:
     color: #111
-    image: $simpleuxlogo
     position: 12% 20%
     repeat: no-repeat
     size: 200px
@@ -12,6 +11,21 @@ nav
   top: 0
   width: 80%
   z-index: 1
+
+  #logo
+    background:
+      image: url("/assets/cbtlogo.png")
+      repeat: no-repeat
+      size: 100%
+    height: 100%
+    left: 11%
+    margin-top: 0px
+    position: absolute
+    top: 25%
+    width: 200px
+    &:hover
+      border: none
+
 
   a
     color: white
