@@ -9,7 +9,10 @@ Simpleuxdesign::Application.routes.draw do
   get "/brands" => 'portfolio#brands'
   get "/services" => 'portfolio#services'
   
-  
+
+  resources "contacts", only: [:new, :create]
+  get "contacts/index" => 'portfolio#index'  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
