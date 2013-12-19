@@ -11,7 +11,12 @@ Simpleuxdesign::Application.routes.draw do
   
 
   resources "contacts", only: [:new, :create]
+#  match "contacts/index" => 'portfolio#index', :via => :get
+
+#  get "contacts/index" => redirect("/index")
   get "contacts/index" => 'portfolio#index'  
+  get "contacts/brands" => 'portfolio#brands'
+  get "contacts/services" => 'portfolio#services'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
